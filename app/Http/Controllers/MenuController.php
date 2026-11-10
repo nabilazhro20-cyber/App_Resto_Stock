@@ -110,9 +110,6 @@ class MenuController extends Controller
             }, $data['items']);
 
             $menu->details()->createMany($details);
-            foreach ($products as $product) {
-                $product->decrement('stok', 1);
-            }
 
             return $menu;
         });

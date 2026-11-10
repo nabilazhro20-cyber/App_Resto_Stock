@@ -18,5 +18,11 @@
            class="sidebar-link {{ request()->routeIs('menu.*') ? 'active' : '' }}">
             Menu Resto
         </a>
+
+        <a href="{{ route('order.index') }}"
+            class="sidebar-link {{ request()->routeIs('order.*') ? 'active' : '' }}">
+            Order
+        </a>
+
     </div>
 </aside>
